@@ -15,7 +15,7 @@ public class UserRegistrationProblem {
     }
 
     public boolean matchPassword(String password){
-        return (Pattern.matches("^(?=.*[0-9])$",password));
+        return (Pattern.matches("^(?=.*[0-9])(?=.*[A-Z])$",password));
     }
 
     public static void main(String[] args) {
