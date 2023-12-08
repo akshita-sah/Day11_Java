@@ -4,6 +4,10 @@ public class UserRegistrationProblem {
     public boolean matchName(String name) {
         return (Pattern.matches("^[A-Z][a-z]{2,}$", name));
     }
+
+    public boolean matchMail(String mail){
+        return (Pattern.matches("^[A-Za-z0-9]+"+"([+._-][A-za-z0-9]+)?"+"@[A-Za-z0-9]+"+"[.]([A-za-z0-9])+"+"([.][A-Za-z0-9]{0,2})?",mail));
+    }
     
     public static void main(String[] args) {
         UserRegistrationProblem user = new UserRegistrationProblem();
