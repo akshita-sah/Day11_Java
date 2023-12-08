@@ -1,6 +1,6 @@
 import org.junit.*;
 import org.junit.Test;
-public class UserRegistrationProblemTest {
+public class UserRegistrationTest {
     @Test
     public void firstNameTest()
     {
